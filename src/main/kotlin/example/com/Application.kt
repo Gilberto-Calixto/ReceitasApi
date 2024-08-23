@@ -12,7 +12,14 @@ fun main(args: Array<String>) {
 }
 
 fun Application.module() {
+    DatabaseFactory.init()
+    install( ContentNegotiation) {
+        json()
+    }
 
+    routing {
+
+    }
 
 
 //    configureSerialization()
